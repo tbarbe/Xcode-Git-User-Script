@@ -1,0 +1,7 @@
+This is a quick script add-on for Xcode that lets you autogenrate .gitignore and .gitattributes in the directory of your choosing.
+
+Simple copy-paste the script into the script menu in Xcode:  Script Menu> Edit User Scripts...  (its the AppleScripting menu icon next to help )
+
+Once you have created a new script and pasted the contents in you may just run the script and it will ask you to name and choose location for two files.
+The default names are already filled in ( .gitignore , .gitattributes ) - just choose the root directory where you want them to appear.
+The finder will warn you that "." will dissapear from finder view when created just hit ok!
