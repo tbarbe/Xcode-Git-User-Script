@@ -1,12 +1,12 @@
 #! /bin/bash
 
 FILE=`%%%{PBXUtilityScriptsPath}%%%/AskUserForNewFileDialog "Save As" ".gitignore"`
-echo $FILE
-touch $FILE
+echo "$FILE"
+touch "$FILE"
 
 FILEX=`%%%{PBXUtilityScriptsPath}%%%/AskUserForNewFileDialog "Save As" ".gitattributes"`
-echo $FILEX
-touch $FILEX
+echo "$FILEX"
+touch "$FILEX"
 
 # This script creates the .gitignore and .gitattributes in the current folder.
 
@@ -43,7 +43,7 @@ CVS
 *(Autosaved).rtfd/
 Backup[ ]of[ ]*.pages/
 Backup[ ]of[ ]*.key/
-Backup[ ]of[ ]*.numbers/" >> $FILE
+Backup[ ]of[ ]*.numbers/" >> "$FILE"
 
 
-echo "*.pbxproj -crlf -diff -merge" >> $FILEX
+echo "*.pbxproj -crlf -diff -merge" >> "$FILEX"
